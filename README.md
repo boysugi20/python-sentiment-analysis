@@ -6,7 +6,15 @@ This project provides a sentiment analysis tool that uses three different librar
 
 -   **TextBlob**: Basic sentiment analysis using TextBlob's built-in functions.
 -   **VADER**: A more nuanced analysis using the VADER sentiment analysis tool, particularly good for social media text.
--   **BERT**: Advanced sentiment analysis using a pre-trained BERT model that outputs sentiment as "Positive," "Neutral," or "Negative."
+-   **BERT**: Advanced sentiment analysis using a pre-trained BERT model.
+
+| Feature            | TextBlob                     | VADER                        | BERT                         |
+|--------------------|------------------------------|------------------------------|------------------------------|
+| Ease of Use        | Easy                         | Easy                         | Moderate to Difficult        |
+| Accuracy           | Moderate                     | Good for short texts        | High                         |
+| Context Awareness   | Low                          | Moderate                     | High                         |
+| Speed              | Fast                         | Fast                         | Slow (computationally expensive) |
+| Use Cases          | Simple texts                | Social media, reviews       | Complex texts               |
 
 ## Installation
 
@@ -40,7 +48,7 @@ This project provides a sentiment analysis tool that uses three different librar
 
 2. When prompted, enter the feedback text for analysis. For example:
 
-    ```vbnet
+    ```
     Enter the feedback text: This is amazing but lacks the details.
     ```
 
@@ -56,11 +64,12 @@ This project provides a sentiment analysis tool that uses three different librar
 
 When you enter feedback like `"Shipping was fast, but the product broke after one day."`, the output will be:
 
-    ```yaml
-    TextBlob Sentiment: Positive | Score: 0.6000
-    VADER Sentiment: Positive | Score: 0.3400
-    BERT Sentiment: Neutral | Score: 0.42854285
-    ```
+```yaml
+TextBlob Sentiment: Positive | Score: 0.6000
+VADER Sentiment: Positive | Score: 0.3400
+BERT Sentiment: Neutral | Score: 0.4285
+```
+
 
 ## Acknowledgments
 
